@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2a060e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="A small museum, dedicated entirely to one girl. Eight portraits, permanent collection." />
+  <title>The Museum of Her &mdash; A Private Viewing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="loading">
+
+  <!-- velvet curtains part on arrival -->
+  <div class="curtains" aria-hidden="true">
+    <div class="curtain c-left"></div>
+    <div class="curtain c-right"></div>
+    <div class="curtain-seal">&#10022; M&middot;U &#10022;</div>
+  </div>
+
+  <!-- dust in the light -->
+  <canvas class="dust" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <span class="brand">The Museum <span>of</span> Her</span>
+    <span class="count">Private viewing &middot; 8 portraits</span>
+  </header>
+
+  <main class="stage">
+    <div class="deck" id="deck">
+
+      <!-- ============ SLIDE 01 &mdash; TITLE ============ -->
+      <section class="slide slide-title is-active" aria-label="The Museum of Her">
+        <div class="slide-inner">
+          <div class="medallion" aria-hidden="true"><span>I</span></div>
+          <p class="ornament">&#10022; &#10022; &#10022;</p>
+          <!-- EDIT THE TITLE HERE -->
+          <h1 class="marquee" id="marquee" aria-label="THE MUSEUM OF HER">THE MUSEUM OF HER</h1>
+          <p class="hero-quote">&ldquo;A small museum, dedicated entirely to one girl.&rdquo;</p>
+          <p class="hero-sub">EIGHT PORTRAITS &nbsp;&middot;&nbsp; PERMANENT COLLECTION</p>
+          <p class="hint">
+            <span class="hint-desktop">Press <kbd>&rarr;</kbd> to begin &nbsp;&middot;&nbsp; <kbd>F</kbd> for full screen</span>
+            <span class="hint-touch">Swipe the wall to wander through the gallery</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 02 &mdash; EXHIBIT 001 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 1">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">001</span>
+          <div class="photo-slot tall">
+            <div class="frame"><div class="mat">
+              <img src="images/the-one-and-only.jpg" alt="Her at her birthday, holding a bouquet" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/the-one-and-only.jpg</code></div>
+          </div>
+          <div class="caption">
+            <!-- EDIT THE PLAQUE BELOW -->
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 001</span>
+              <span class="pl-title">The One and Only</span>
+            </div>
+            <p class="pl-note">The first piece in the collection &mdash; still the one I look at longest.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 03 &mdash; EXHIBIT 002 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 2">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">002</span>
+          <div class="photo-slot tall">
+            <div class="frame"><div class="mat">
+              <img src="images/that-smile.jpg" alt="A close portrait, smiling" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/that-smile.jpg</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 002</span>
+              <span class="pl-title">That Smile</span>
+            </div>
+            <p class="pl-note">Catalogued under: reasons the whole room goes quiet.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 04 &mdash; EXHIBIT 003 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 3">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">003</span>
+          <div class="photo-slot tall">
+            <div class="frame"><div class="mat">
+              <img src="images/golden-hour.jpg" alt="Golden hour light on the walkway" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/golden-hour.jpg</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 003</span>
+              <span class="pl-title">Golden Hour</span>
+            </div>
+            <p class="pl-note">Late afternoon light, doing its very best to compliment her.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 05 &mdash; EXHIBIT 004 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 4">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">004</span>
+          <div class="photo-slot tall">
+            <div class="frame"><div class="mat">
+              <img src="images/caught-laughing.jpg" alt="Laughing behind her hand" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/caught-laughing.jpg</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 004</span>
+              <span class="pl-title">Caught Laughing</span>
+            </div>
+            <p class="pl-note">Evidence that she laughs with her whole face.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 06 &mdash; EXHIBIT 005 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 5">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">005</span>
+          <div class="photo-slot tall">
+            <div class="frame"><div class="mat">
+              <img src="images/looking-away-still-perfect.jpg" alt="Looking away on the lawn" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/looking-away-still-perfect.jpg</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 005</span>
+              <span class="pl-title">Looking Away, Still Perfect</span>
+            </div>
+            <p class="pl-note">She wasn't posing. That's the whole point.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 07 &mdash; EXHIBIT 006 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 6">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">006</span>
+          <div class="photo-slot tall">
+            <div class="frame"><div class="mat">
+              <img src="images/sunday.jpg" alt="A close portrait indoors" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/sunday.jpg</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 006</span>
+              <span class="pl-title">Sunday</span>
+            </div>
+            <p class="pl-note">A slow morning, kept exactly as it was.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 08 &mdash; EXHIBIT 007 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 7">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">007</span>
+          <div class="photo-slot">
+            <div class="frame"><div class="mat">
+              <img src="images/the-favourite.webp" alt="Her in a pink blazer on the day" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/the-favourite.webp</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 007</span>
+              <span class="pl-title">The Favourite</span>
+            </div>
+            <p class="pl-note">Not a photograph so much as a keepsake.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 09 &mdash; EXHIBIT 008 ============ -->
+      <section class="slide slide-exhibit" aria-label="Exhibit 8">
+        <div class="slide-inner">
+          <span class="wall-number" aria-hidden="true">008</span>
+          <div class="photo-slot">
+            <div class="frame"><div class="mat">
+              <img src="images/under-the-lights.jpg" alt="Holding her certificates and medals" />
+            </div></div>
+            <div class="empty-note">Add your photo here:<br><code>images/under-the-lights.jpg</code></div>
+          </div>
+          <div class="caption">
+            <div class="plaque">
+              <span class="pl-num">EXHIBIT No. 008</span>
+              <span class="pl-title">Under the Lights</span>
+            </div>
+            <p class="pl-note">The one I'd hang in every room, if the museum allowed it.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SLIDE 10 &mdash; CLOSING ============ -->
+      <section class="slide slide-end" aria-label="End of the gallery">
+        <div class="slide-inner">
+          <p class="ornament">&#10022; &#10022; &#10022;</p>
+          <h2 class="end-title">END OF GALLERY</h2>
+          <p class="hero-quote">&ldquo;Thank you for visiting. She is the whole collection.&rdquo;</p>
+          <button class="ghost-btn" id="restartBtn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.4-5.5" /><path d="M4.5 4.5v4.2h4.2" /></svg>
+            <span>Walk through again</span>
+          </button>
+        </div>
+      </section>
+
+    </div>
+
+    <button class="nav nav-prev" id="prevBtn" type="button" aria-label="Previous exhibit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5 8 12l6.5 7" /></svg>
+    </button>
+    <button class="nav nav-next" id="nextBtn" type="button" aria-label="Next exhibit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5 16 12l-6.5 7" /></svg>
+    </button>
+  </main>
+
+  <footer class="hud">
+    <span class="hud-counter"><b id="hudNow">01</b> <span class="slash">/</span> <span id="hudTotal">10</span></span>
+    <div class="dots" id="dots" role="tablist" aria-label="Go to slide"></div>
+    <button class="hud-btn" id="fsBtn" type="button" aria-label="Toggle full screen">
+      <svg class="ico ico-expand" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 4H4v5.5" /><path d="M14.5 20H20v-5.5" /><path d="M20 9.5V4h-5.5" /><path d="M4 14.5V20h5.5" /></svg>
+      <svg class="ico ico-collapse" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h5.5V4" /><path d="M20 14.5h-5.5V20" /><path d="M14.5 4v5.5H20" /><path d="M9.5 20v-5.5H4" /></svg>
+      <span class="hud-btn-label">Full screen</span>
+    </button>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-btn lb-close" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5l11 11" /><path d="M17.5 6.5l-11 11" /></svg>
+    </button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8.5 12 15 19" /></svg>
+    </button>
+    <figure>
+      <img id="lb-img" src="" alt="" />
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Next">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 15.5 12 9 19" /></svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
